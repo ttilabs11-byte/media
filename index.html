@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tti Labs Media Library</title>
+<meta name="description" content="Tti Labs profiles, sector brochures and films: watch or read online, or download the full-quality files.">
+<meta property="og:title" content="Tti Labs Media Library">
+<meta property="og:description" content="Corporate profile, sector brochures, the corporate film, social films and lab method films, free to download.">
+<meta property="og:image" content="https://ttilabs11-byte.github.io/media/img/share.jpg">
+<meta property="og:url" content="https://ttilabs11-byte.github.io/media/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
+<link rel="preload" href="fonts/inter-tight-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(fonts/inter-latin-500.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600.woff2) format("woff2")}
+@font-face{font-family:"Inter Tight";font-weight:700;font-display:swap;src:url(fonts/inter-tight-latin-700.woff2) format("woff2")}
+:root{--navy:#1B3564;--green:#1D872E;--green-s:#177427;--green-d:#7CBB6D;--ink:#33415A;--grey:#5E6B80;--line:#DDE2EA;--wash:#F5F7FA;--bg:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:28px;height:64px}
+header.top img{height:34px;width:auto;display:block}
+nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--grey);padding:10px 12px;border-radius:6px;white-space:nowrap}
+nav a:hover{color:var(--navy);background:var(--wash)}
+.hero{padding:72px 0 56px}
+.label{font:600 13px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--green-s);margin:0 0 18px}
+h1{font:700 clamp(38px,6vw,68px)/1.04 "Inter Tight",Inter,sans-serif;letter-spacing:-.02em;color:var(--navy);margin:0;max-width:15ch}
+h1 span{color:var(--green);display:block}
+.narrow{display:none}
+.sub{font-size:19px;color:var(--ink);max-width:46ch;margin:22px 0 0;text-wrap:pretty}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:center}
+.stack{position:relative;display:block;height:420px}
+.stack img{position:absolute;top:calc(var(--i) * 22px);left:calc(var(--i) * 17%);width:46%;height:auto;aspect-ratio:210/297;object-fit:cover;border-radius:6px;box-shadow:0 1px 2px rgba(27,53,100,.12),0 12px 28px -8px rgba(27,53,100,.35);transition:transform .3s ease}
+.stack:hover img{transform:translateY(-6px)}
+.stack img:nth-child(2){transition-delay:.03s}.stack img:nth-child(3){transition-delay:.06s}.stack img:nth-child(4){transition-delay:.09s}
+.stats{display:flex;gap:0;margin:36px 0 0;padding:0;list-style:none}
+.stats li{padding:0 28px;border-left:1px solid var(--line)}
+.stats li:first-child{padding-left:0;border-left:0}
+.stats b{display:block;font:700 40px/1 "Inter Tight",sans-serif;color:var(--green)}
+.stats small{display:block;font-size:14px;color:var(--grey);margin-top:6px;line-height:1.3}
+.band{background:var(--navy);color:#fff;padding:64px 0}
+.band .label{color:var(--green-d)}
+.band h2{color:#fff}
+.feature{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:48px;align-items:start}
+.band .meta,.band .lede{color:#C9D3E3}
+.band .btn.ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.band .btn.ghost:hover{background:rgba(255,255,255,.1)}
+section.part{padding:72px 0 8px}
+h2{font:700 clamp(28px,3.4vw,38px)/1.1 "Inter Tight",sans-serif;letter-spacing:-.01em;color:var(--navy);margin:0}
+.intro{color:var(--grey);margin:10px 0 0;max-width:62ch}
+.grid{display:grid;gap:44px 32px;margin-top:36px}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+h3{font:600 18px/1.3 Inter,sans-serif;color:var(--navy);margin:16px 0 4px}
+.band h3{color:#fff;font:700 26px/1.2 "Inter Tight",sans-serif;margin-top:20px}
+.meta{font-size:14px;color:var(--grey);margin:0}
+.lede{font-size:15px;color:var(--ink);margin:10px 0 0}
+.film .lede{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cover{display:block;border-radius:6px;overflow:hidden;background:var(--wash);box-shadow:0 0 0 1px var(--line);aspect-ratio:210/297}
+.cover.land{aspect-ratio:297/210}
+.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.cover:hover img{transform:scale(1.025)}
+.frame{border-radius:6px;overflow:hidden;background:#0E1B33;aspect-ratio:16/9}
+.frame video{width:100%;height:100%;display:block;object-fit:contain;background:#0E1B33}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:6px;background:var(--green);color:#fff;text-decoration:none;font:600 15px/1 Inter,sans-serif;border:1.5px solid var(--green)}
+.btn:hover{background:#176E25;border-color:#176E25}
+.btn.ghost{background:transparent;color:var(--navy);border-color:#B8C2D3}
+.btn.ghost:hover{background:var(--wash)}
+.btn svg{width:18px;height:18px;flex:none}
+a:focus-visible,video:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+footer{margin-top:88px;border-top:1px solid var(--line);padding:36px 0 48px;color:var(--grey);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center}
+footer img{height:30px;width:auto}
+footer .tag{margin-right:auto}
+@media (max-width:1000px){.hero-grid{grid-template-columns:1fr}.stack{display:none}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.feature{grid-template-columns:1fr;gap:40px}.feature .doc{max-width:520px}}
+@media (max-width:640px){.wrap{padding:0 16px}header.top .wrap{gap:12px;height:58px}header.top img{height:28px}nav a{font-size:14px;padding:12px 7px}nav{gap:0}.wide{display:none}.narrow{display:inline}
+.hero{padding:44px 0 40px}.sub{font-size:17px}.stats li{padding:0 18px}.stats b{font-size:32px}
+.band{padding:44px 0}section.part{padding:52px 0 0}.g3{grid-template-columns:1fr}.g4{gap:32px 16px}.grid{gap:36px 16px}
+.g4 h3{font-size:16px}.g4 .btn{padding:0 12px;font-size:14px}.g4 .btn.ghost{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="https://ttilabs.net" aria-label="Tti Labs website"><img src="img/logo.png" alt="Tti Labs" width="150" height="34"></a>
+  <nav aria-label="Sections"><a class="wide" href="#featured">Corporate</a><a href="#brochures">Brochures</a><a href="#social">Social<span class="wide"> films</span></a><a href="#methods">Method<span class="wide"> films</span><span class="narrow">s</span></a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+  <p class="label">Tti Labs media library</p>
+  <h1>Profiles, brochures and films <span>ready to download</span></h1>
+  <p class="sub">Read or watch each one here, then download the full-quality file to share or print.</p>
+  <ul class="stats"><li><b>5</b><small>profiles and<br>brochures</small></li><li><b>19</b><small>films to watch<br>and download</small></li></ul>
+  </div>
+  <a class="stack" href="#brochures" aria-label="Go to the sector brochures"><img src="img/textile-profile.jpg" alt="" width="636" height="900" style="--i:0"><img src="img/food-profile.jpg" alt="" width="636" height="900" style="--i:1"><img src="img/pharma-profile.jpg" alt="" width="636" height="900" style="--i:2"><img src="img/ppe-center-profile.jpg" alt="" width="636" height="900" style="--i:3"></a>
+</div></section>
+<section class="band" id="featured"><div class="wrap">
+  <p class="label">Corporate</p>
+  <div class="feature">
+    <article class="film big">
+  <div class="frame"><video controls preload="none" playsinline poster="img/corporate-video.jpg" aria-label="Corporate Video"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/corporate-video.mp4" type="video/mp4"></video></div>
+  <h3>Corporate Video</h3>
+  <p class="meta">3:26 · Quad HD · MP4</p>
+  <p class="lede">Tti Labs in about three and a half minutes: our laboratories, our people and the work we do for industry.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/corporate-video.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20Corporate%20Video.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 383 MB</a></div>
+</article>
+    <article class="doc big">
+  <a class="cover land" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/corporate-profile.pdf" target="_blank" rel="noopener" aria-label="Read the Corporate Profile 2026 online">
+    <img src="img/corporate-profile.jpg" alt="Cover of the Tti Labs Corporate Profile 2026" loading="lazy" width="900" height="636"></a>
+  <h3>Corporate Profile 2026</h3>
+  <p class="meta">29 pages · PDF · 7.9 MB</p>
+  <p class="lede">Testing, inspection, certification and sustainability services, with over 30 years of excellence in quality assurance.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/corporate-profile.pdf?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20Corporate%20Profile%202026.pdf%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/corporate-profile.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M8 4H4.5A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17h10a1.5 1.5 0 0 0 1.5-1.5V12M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Read online</a></div>
+</article>
+  </div>
+</div></section>
+<section class="part" id="brochures"><div class="wrap">
+  <h2>Sector brochures</h2>
+  <p class="intro">The services, standards and accreditations for each sector we test.</p>
+  <div class="grid g4"><article class="doc">
+  <a class="cover" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/textile-profile.pdf" target="_blank" rel="noopener" aria-label="Read the Textile Profile online">
+    <img src="img/textile-profile.jpg" alt="Cover of the Tti Labs Textile Profile" loading="lazy" width="636" height="900"></a>
+  <h3>Textile Profile</h3>
+  <p class="meta">18 pages · PDF · 4.3 MB</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/textile-profile.pdf?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20Textile%20Profile.pdf%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/textile-profile.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M8 4H4.5A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17h10a1.5 1.5 0 0 0 1.5-1.5V12M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Read online</a></div>
+</article><article class="doc">
+  <a class="cover" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/food-profile.pdf" target="_blank" rel="noopener" aria-label="Read the Food Profile online">
+    <img src="img/food-profile.jpg" alt="Cover of the Tti Labs Food Profile" loading="lazy" width="636" height="900"></a>
+  <h3>Food Profile</h3>
+  <p class="meta">18 pages · PDF · 6.4 MB</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/food-profile.pdf?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20Food%20Profile.pdf%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/food-profile.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M8 4H4.5A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17h10a1.5 1.5 0 0 0 1.5-1.5V12M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Read online</a></div>
+</article><article class="doc">
+  <a class="cover" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/pharma-profile.pdf" target="_blank" rel="noopener" aria-label="Read the Pharma Profile online">
+    <img src="img/pharma-profile.jpg" alt="Cover of the Tti Labs Pharma Profile" loading="lazy" width="636" height="900"></a>
+  <h3>Pharma Profile</h3>
+  <p class="meta">14 pages · PDF · 4.4 MB</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/pharma-profile.pdf?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20Pharma%20Profile.pdf%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/pharma-profile.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M8 4H4.5A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17h10a1.5 1.5 0 0 0 1.5-1.5V12M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Read online</a></div>
+</article><article class="doc">
+  <a class="cover" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/ppe-center-profile.pdf" target="_blank" rel="noopener" aria-label="Read the PPE Center Profile online">
+    <img src="img/ppe-center-profile.jpg" alt="Cover of the Tti Labs PPE Center Profile" loading="lazy" width="636" height="900"></a>
+  <h3>PPE Center Profile</h3>
+  <p class="meta">20 pages · PDF · 6.2 MB</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/ppe-center-profile.pdf?httpResponseContentDisposition=attachment%3B%20filename%3D%22Tti%20Labs%20PPE%20Center%20Profile.pdf%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/ppe-center-profile.pdf" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M8 4H4.5A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17h10a1.5 1.5 0 0 0 1.5-1.5V12M11 3h6v6m0-6-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Read online</a></div>
+</article></div>
+</div></section>
+<section class="part" id="social"><div class="wrap">
+  <h2>Social media films</h2>
+  <p class="intro">Visits, events and days we marked, as posted on our channels.</p>
+  <div class="grid g3"><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/01-pharma-industry-visit.jpg" aria-label="Pharma Industry Visit"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/01-pharma-industry-visit.mp4" type="video/mp4"></video></div>
+  <h3>Pharma Industry Visit</h3>
+  <p class="meta">1:17 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/01-pharma-industry-visit.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2201%20Pharma%20Industry%20Visit.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 51 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/02-quality-control-visit.jpg" aria-label="Quality Control Visit"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/02-quality-control-visit.mp4" type="video/mp4"></video></div>
+  <h3>Quality Control Visit</h3>
+  <p class="meta">1:48 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/02-quality-control-visit.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2202%20Quality%20Control%20Visit.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 72 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/03-halal-earning-recap-16x9.jpg" aria-label="Halal Earning Recap"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/03-halal-earning-recap-16x9.mp4" type="video/mp4"></video></div>
+  <h3>Halal Earning Recap</h3>
+  <p class="meta">2:24 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/03-halal-earning-recap-16x9.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2203%20Halal%20Earning%20Recap%2016x9.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download 16:9 · 125 MB</a><a class="btn ghost" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/03-halal-earning-recap-4x5.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2203%20Halal%20Earning%20Recap%204x5.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download 4:5 · 104 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/04-ceo-summit-islamabad-2026.jpg" aria-label="CEO Summit Islamabad 2026"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/04-ceo-summit-islamabad-2026.mp4" type="video/mp4"></video></div>
+  <h3>CEO Summit Islamabad 2026</h3>
+  <p class="meta">2:09 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/04-ceo-summit-islamabad-2026.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2204%20CEO%20Summit%20Islamabad%202026.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 110 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/05-world-cotton-day.jpg" aria-label="World Cotton Day"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/05-world-cotton-day.mp4" type="video/mp4"></video></div>
+  <h3>World Cotton Day</h3>
+  <p class="meta">2:35 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/05-world-cotton-day.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2205%20World%20Cotton%20Day.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 169 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/06-dpp-delegation-visit.jpg" aria-label="DPP Delegation Visit"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/06-dpp-delegation-visit.mp4" type="video/mp4"></video></div>
+  <h3>DPP Delegation Visit</h3>
+  <p class="meta">2:11 · Full HD · MP4</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/06-dpp-delegation-visit.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%2206%20DPP%20Delegation%20Visit.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 151 MB</a></div>
+</article></div>
+</div></section>
+<section class="part" id="methods"><div class="wrap">
+  <h2>Method films</h2>
+  <p class="intro">How we run each test, step by step, filmed in our own laboratory.</p>
+  <div class="grid g3"><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/alkylphenol-ethoxylates-apeo-iso-18254-1.jpg" aria-label="Alkylphenol Ethoxylates APEO (ISO 18254-1)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/alkylphenol-ethoxylates-apeo-iso-18254-1.mp4" type="video/mp4"></video></div>
+  <h3>Alkylphenol Ethoxylates APEO (ISO 18254-1)</h3>
+  <p class="meta">2:46 · Full HD · MP4</p>
+  <p class="lede">How we test a textile for alkylphenol ethoxylates (APEO) to BS EN ISO 18254-1:2016, filmed in our lab.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/alkylphenol-ethoxylates-apeo-iso-18254-1.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Alkylphenol%20Ethoxylates%20APEO%20%28ISO%2018254-1%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 167 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/azo-dyes-and-banned-aromatic-amines-iso-14362-1-and-iso-17234-1.jpg" aria-label="Azo Dyes and Banned Aromatic Amines (ISO 14362-1 and ISO 17234-1)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/azo-dyes-and-banned-aromatic-amines-iso-14362-1-and-iso-17234-1.mp4" type="video/mp4"></video></div>
+  <h3>Azo Dyes and Banned Aromatic Amines (ISO 14362-1 and ISO 17234-1)</h3>
+  <p class="meta">4:34 · Full HD · MP4</p>
+  <p class="lede">How we test textiles (ISO 14362-1:2017) and leather (ISO 17234-1:2024) for aromatic amines released by azo dyes.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/azo-dyes-and-banned-aromatic-amines-iso-14362-1-and-iso-17234-1.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Azo%20Dyes%20and%20Banned%20Aromatic%20Amines%20%28ISO%2014362-1%20and%20ISO%2017234-1%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 357 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/colour-fastness-to-oxidative-bleach-washing-iso-105-c09.jpg" aria-label="Colour Fastness to Oxidative Bleach Washing (ISO 105-C09)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/colour-fastness-to-oxidative-bleach-washing-iso-105-c09.mp4" type="video/mp4"></video></div>
+  <h3>Colour Fastness to Oxidative Bleach Washing (ISO 105-C09)</h3>
+  <p class="meta">3:16 · Full HD · MP4</p>
+  <p class="lede">How we test whether a colour fades in a wash with oxygen bleach, to BS EN ISO 105-C09:2003.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/colour-fastness-to-oxidative-bleach-washing-iso-105-c09.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Colour%20Fastness%20to%20Oxidative%20Bleach%20Washing%20%28ISO%20105-C09%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 215 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/dimensional-stability-to-washing-and-drying-iso-6330-and-iso-3759.jpg" aria-label="Dimensional Stability to Washing and Drying (ISO 6330 and ISO 3759)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/dimensional-stability-to-washing-and-drying-iso-6330-and-iso-3759.mp4" type="video/mp4"></video></div>
+  <h3>Dimensional Stability to Washing and Drying (ISO 6330 and ISO 3759)</h3>
+  <p class="meta">3:04 · Full HD · MP4</p>
+  <p class="lede">How we measure whether a fabric shrinks or grows after washing and drying, to ISO 6330 and ISO 3759.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/dimensional-stability-to-washing-and-drying-iso-6330-and-iso-3759.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Dimensional%20Stability%20to%20Washing%20and%20Drying%20%28ISO%206330%20and%20ISO%203759%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 193 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/extractable-heavy-metals-in-artificial-sweat-en-16711-2.jpg" aria-label="Extractable Heavy Metals in Artificial Sweat (EN 16711-2)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/extractable-heavy-metals-in-artificial-sweat-en-16711-2.mp4" type="video/mp4"></video></div>
+  <h3>Extractable Heavy Metals in Artificial Sweat (EN 16711-2)</h3>
+  <p class="meta">3:46 · Full HD · MP4</p>
+  <p class="lede">How we measure the metals a textile releases into acidic artificial sweat, to EN 16711-2:2015.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/extractable-heavy-metals-in-artificial-sweat-en-16711-2.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Extractable%20Heavy%20Metals%20in%20Artificial%20Sweat%20%28EN%2016711-2%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 206 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/flammability-of-fabrics-en-71-2.jpg" aria-label="Flammability of Fabrics (EN 71-2)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/flammability-of-fabrics-en-71-2.mp4" type="video/mp4"></video></div>
+  <h3>Flammability of Fabrics (EN 71-2)</h3>
+  <p class="meta">2:37 · Full HD · MP4</p>
+  <p class="lede">How we test how fast flame spreads up a toy fabric, to EN 71-2:2020.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/flammability-of-fabrics-en-71-2.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Flammability%20of%20Fabrics%20%28EN%2071-2%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 188 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/migration-of-certain-elements-from-fabric-en-71-3.jpg" aria-label="Migration of Certain Elements from Fabric (EN 71-3)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/migration-of-certain-elements-from-fabric-en-71-3.mp4" type="video/mp4"></video></div>
+  <h3>Migration of Certain Elements from Fabric (EN 71-3)</h3>
+  <p class="meta">4:17 · Full HD · MP4</p>
+  <p class="lede">How we measure what can dissolve out of a toy fabric into a stomach-acid simulant, to EN 71-3:2019+A1:2021.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/migration-of-certain-elements-from-fabric-en-71-3.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Migration%20of%20Certain%20Elements%20from%20Fabric%20%28EN%2071-3%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 276 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/ph-of-aqueous-extract-iso-3071.jpg" aria-label="pH of Aqueous Extract (ISO 3071)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/ph-of-aqueous-extract-iso-3071.mp4" type="video/mp4"></video></div>
+  <h3>pH of Aqueous Extract (ISO 3071)</h3>
+  <p class="meta">3:25 · Full HD · MP4</p>
+  <p class="lede">How we measure the pH of a textile, to ISO 3071:2020.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/ph-of-aqueous-extract-iso-3071.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22pH%20of%20Aqueous%20Extract%20%28ISO%203071%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 264 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/phthalates-in-children-s-products-cpsc-ch-c1001-09-4.jpg" aria-label="Phthalates in Children&#x27;s Products (CPSC-CH-C1001-09.4)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/phthalates-in-children-s-products-cpsc-ch-c1001-09-4.mp4" type="video/mp4"></video></div>
+  <h3>Phthalates in Children&#x27;s Products (CPSC-CH-C1001-09.4)</h3>
+  <p class="meta">2:56 · Full HD · MP4</p>
+  <p class="lede">How we test children&#x27;s products for phthalates, to the CPSC method CPSC-CH-C1001-09.4.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/phthalates-in-children-s-products-cpsc-ch-c1001-09-4.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Phthalates%20in%20Children%27s%20Products%20%28CPSC-CH-C1001-09.4%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 205 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/saliva-fastness-din-53160-1.jpg" aria-label="Saliva Fastness (DIN 53160-1)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/saliva-fastness-din-53160-1.mp4" type="video/mp4"></video></div>
+  <h3>Saliva Fastness (DIN 53160-1)</h3>
+  <p class="meta">2:59 · Full HD · MP4</p>
+  <p class="lede">How we test whether colour can come off an article onto saliva, to DIN 53160-1:2010-10.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/saliva-fastness-din-53160-1.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Saliva%20Fastness%20%28DIN%2053160-1%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 203 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/seam-slippage-resistance-iso-13936-1.jpg" aria-label="Seam Slippage Resistance (ISO 13936-1)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/seam-slippage-resistance-iso-13936-1.mp4" type="video/mp4"></video></div>
+  <h3>Seam Slippage Resistance (ISO 13936-1)</h3>
+  <p class="meta">2:33 · Full HD · MP4</p>
+  <p class="lede">How we measure the force it takes to pull a seam open in woven fabric, to ISO 13936-1:2004.</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/seam-slippage-resistance-iso-13936-1.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Seam%20Slippage%20Resistance%20%28ISO%2013936-1%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 166 MB</a></div>
+</article><article class="film">
+  <div class="frame"><video controls preload="none" playsinline poster="img/total-lead-in-non-metal-materials-astm-f963-and-cpsia.jpg" aria-label="Total Lead in Non-Metal Materials (ASTM F963 and CPSIA)"><source src="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/play/total-lead-in-non-metal-materials-astm-f963-and-cpsia.mp4" type="video/mp4"></video></div>
+  <h3>Total Lead in Non-Metal Materials (ASTM F963 and CPSIA)</h3>
+  <p class="meta">3:17 · Full HD · MP4</p>
+  <p class="lede">How we measure total lead in a non-metal toy material, to ASTM F963-17 and CPSIA (method CPSC-CH-E1002-08.3).</p>
+  <div class="acts"><a class="btn" href="https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frlpdyaxl4lc/b/tti-labs-media/o/files/total-lead-in-non-metal-materials-astm-f963-and-cpsia.mp4?httpResponseContentDisposition=attachment%3B%20filename%3D%22Total%20Lead%20in%20Non-Metal%20Materials%20%28ASTM%20F963%20and%20CPSIA%29.mp4%22"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v9m0 0-4-4m4 4 4-4M4 15.5h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Download · 212 MB</a></div>
+</article></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <img src="img/logo.png" alt="Tti Labs" width="141" height="30">
+  <span class="tag">Over 30 years of excellence in quality assurance</span>
+  <a href="https://ttilabs.net">ttilabs.net</a>
+</div></footer>
+</body>
+</html>
